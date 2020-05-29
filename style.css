@@ -24,12 +24,13 @@ display:block;
   font-weight:bolder;
   letter-spacing: 12px;
   margin-bottom:20px;
+  background-color: black;
   position: relative;
  animation: text 6s linear infinite;
 }
 .text2{
-  font-size: 30px;
-  color:powderblue;
+  font-size: 40px;
+  color:aqua;
 }
 
 @keyframes text {
