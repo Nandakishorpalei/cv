@@ -3,10 +3,10 @@
   <html lang="en" dir="ltr">
 <center>
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
     <title>NKP&Pp's personal site</title>
 
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="CSS/styles.css">
   </head>
   <h1><b><marquee  direction="right">❤❤Nanda kishor palei❤❤</marquee>
     </b></h1>
@@ -30,16 +30,80 @@
    <h1><b>
        <marquee direction="left">❤❤ love to do this ❤❤</marquee>
      </b></h1>
-     <a href="https://images2.imgbox.com/ad/54/lGPheMTw_o.png"><h1>About Me</h1></a>
-           <a href="https://images2.imgbox.com/cf/94/Bmagn7uk_o.png"><h1>Logo</h1></a>
-  <h2> TAKE A LOOK </h2>
-    <center><hr>
-<img src="https://images2.imgbox.com/fd/97/GTi9uAHO_o.jpg" width="600px" height="400px" alt="NKP&Pp's personal site"></center>
+
 <body>
   <div class="container">
     <span class="text1">NKP</span>
     <span class="text2">❤❤payal❤❤</span>
   </div>
+<center>
+  <div class="slideshow-container">
+
+   <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://images2.imgbox.com/46/83/DJQWKpxz_o.jpg" alt="nkp1">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://images2.imgbox.com/4d/f3/9fsR727u_o.jpg" alt="nkp2">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://images2.imgbox.com/90/e2/8DvTgmHe_o.jpg" alt="nkp2">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(+1)">&#10095;</a>
+
+  </div>
+  <br>
+  <div >
+
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</center>
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  <a href="https://images2.imgbox.com/ad/54/lGPheMTw_o.png"><h1>About Me</h1></a>
+  <a href="https://images2.imgbox.com/cf/94/Bmagn7uk_o.png"><h1>Logo</h1></a>
+<h2> TAKE A LOOK </h2>
+ <center><hr>
+<img src="https://images2.imgbox.com/fd/97/GTi9uAHO_o.jpg" width="600px" height="400px" alt="NKP&Pp's personal site"></center>
+
+
 <h2>Tell Me About You</h2>
 <form class="" action="mailto:nandakishorpalei7676@gmail.com" method="post" >
 <label for="name">Your name</label>
